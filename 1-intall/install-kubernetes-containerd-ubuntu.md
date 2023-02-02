@@ -21,9 +21,9 @@ sudo bash /tmp/installK8S.sh
 
    ## install networking driver -- Weave/flannel/canal/calico etc...
 
-   ## below installs calico networking driver
+   ## below installs wave networking driver
 
-   kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.24.1/manifests/calico.yaml
+  kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
 
    # Validate:  kubectl get nodes
 ```
